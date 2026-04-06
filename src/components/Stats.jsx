@@ -8,7 +8,7 @@ const stats = [
 
 export default function Stats() {
   return (
-    <section className="py-20 bg-[#111111] border-y border-white/5">
+    <section className="py-12 md:py-20 lg:py-24 bg-[#111111] border-y border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 text-center">
           {stats.map((stat, index) => (
@@ -20,8 +20,8 @@ export default function Stats() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex flex-col border-white/10 p-6 rounded-2xl bg-[#0a0a0a]"
             >
-              <dt className="order-2 mt-2 text-lg font-medium leading-6 text-[#a1a1a1] uppercase tracking-wider">{stat.name}</dt>
-              <dd className="order-1 text-5xl font-bold tracking-tighter text-white uppercase">{stat.value}</dd>
+              <dt className="order-2 mt-2 text-base sm:text-lg font-medium leading-6 text-[#a1a1a1] uppercase tracking-wider">{stat.name}</dt>
+              <dd className="order-1 text-4xl sm:text-5xl font-bold tracking-tighter text-white uppercase">{stat.value}</dd>
             </motion.div>
           ))}
         </div>

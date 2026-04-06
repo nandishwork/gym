@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a] pt-24 pb-12 flex flex-col">
-      <div className="max-w-6xl mx-auto px-4 w-full flex-1 flex flex-col">
+    <div className="min-h-screen bg-[#0a0a0a] pt-20 sm:pt-24 pb-12 flex flex-col">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex-1 flex flex-col">
         <div className="mb-8">
           <Link to="/" className="inline-flex items-center text-[#a1a1a1] hover:text-white transition-colors group text-sm font-medium uppercase tracking-wider">
             <ArrowLeft size={16} className="mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -21,10 +21,10 @@ export default function Contact() {
             className="space-y-8"
           >
             <div>
-              <h1 className="text-4xl md:text-5xl font-bold tracking-tighter uppercase mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter uppercase mb-3 sm:mb-4">
                 Get In <span className="text-red-600">Touch</span>
               </h1>
-              <p className="text-[#a1a1a1] text-lg max-w-md">
+              <p className="text-[#a1a1a1] text-base sm:text-lg max-w-md">
                 Have questions about our facilities, memberships, or personal training? We're here to help you achieve your fitness goals.
               </p>
             </div>
@@ -36,7 +36,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-white font-bold uppercase tracking-wider mb-1">Location</h3>
-                  <p className="text-[#a1a1a1]">123 Fitness Avenue<br/>Metro City, NY 10001</p>
+                  <p className="text-[#a1a1a1]">42, MG Road, Banjara Hills<br/>Hyderabad, Telangana 500034</p>
                 </div>
               </div>
 
@@ -46,7 +46,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-white font-bold uppercase tracking-wider mb-1">Phone</h3>
-                  <p className="text-[#a1a1a1]">+1 (555) 123-4567</p>
+                  <p className="text-[#a1a1a1]">+91 98765 43210</p>
                 </div>
               </div>
 
@@ -56,7 +56,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="text-white font-bold uppercase tracking-wider mb-1">Email</h3>
-                  <p className="text-[#a1a1a1]">info@elitegym.com</p>
+                  <p className="text-[#a1a1a1]">info@hivnkgym.in</p>
                 </div>
               </div>
             </div>
@@ -67,13 +67,13 @@ export default function Contact() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.1 }}
-            className="bg-[#111111] border border-white/5 rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-hidden"
+            className="bg-[#111111] border border-white/5 rounded-3xl p-6 sm:p-8 md:p-10 shadow-2xl relative overflow-hidden"
           >
             {/* Subtle background glow */}
             <div className="absolute top-0 right-0 w-64 h-64 bg-red-600/10 rounded-full blur-[80px] pointer-events-none" />
             
             <div className="relative z-10">
-              <h2 className="text-2xl font-bold uppercase tracking-wider text-white mb-8">Send a Message</h2>
+              <h2 className="text-xl sm:text-2xl font-bold uppercase tracking-wider text-white mb-6 sm:mb-8">Send a Message</h2>
               
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="space-y-2">
@@ -81,7 +81,7 @@ export default function Contact() {
                   <input 
                     type="text" 
                     className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-red-600 transition-colors"
-                    placeholder="John Doe"
+                    placeholder="Rahul Sharma"
                   />
                 </div>
                 
@@ -90,7 +90,7 @@ export default function Contact() {
                   <input 
                     type="email" 
                     className="w-full bg-[#0a0a0a] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-red-600 transition-colors"
-                    placeholder="john@example.com"
+                    placeholder="rahul@example.in"
                   />
                 </div>
 
@@ -105,7 +105,7 @@ export default function Contact() {
                 
                 <button 
                   type="submit" 
-                  className="w-full bg-red-600 text-white rounded-xl py-4 font-bold uppercase tracking-widest text-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(220,38,38,0.2)] mt-4"
+                  className="w-full bg-red-600 text-white rounded-xl py-3 sm:py-4 font-bold uppercase tracking-widest text-xs sm:text-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(220,38,38,0.2)] mt-4"
                 >
                   Send Message
                 </button>

@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import JoinNow from './pages/JoinNow';
 import Contact from './pages/Contact';
+import About from './pages/About';
+import PlansPage from './pages/PlansPage';
 
 function App() {
   return (
@@ -14,7 +16,9 @@ function App() {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/plans" element={<PlansPage />} />
             <Route path="/join" element={<JoinNow />} />
+            <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
