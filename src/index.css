@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-main: #0a0a0a;
+  --color-brand-sec: #111111;
+  --color-card-bg: #1a1a1a;
+  --color-card-border: #2a2a2a;
+  --color-text-main: #ffffff;
+  --color-text-sec: #a1a1a1;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-main text-text-main antialiased selection:bg-white/20;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
